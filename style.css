@@ -1,0 +1,82 @@
+/*
+ * 
+ * CSS for making a resume with pandoc. Inspired by moderncv
+ * and Christophe-Marie Duquesne <chmd@chmd.fr>
+ *
+ */
+
+/* Whole document */
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #000000;
+    width: 800px;
+    margin: auto;
+    background: #FFFFFF;
+    padding: 10px 10px 10px 10px;
+}
+
+/* Title of the resume */
+h1 {
+    font-size: 45px;
+    /*color: #757575;*/
+    color: #000000;
+    text-align:center;
+    margin-bottom:15px;
+}
+/*Titel of categories*/
+h2 {
+    color: #757575;
+    width: 100%;
+    margin: .7em auto;
+    overflow: hidden;
+    text-align: center;
+    font-weight:300;
+}
+h2:before, h2:after {
+    content: "";
+    display: inline-block;
+    width: 50%;
+    margin: 0 .5em 0 -55%;
+    vertical-align: middle;
+    border-bottom: 1px solid;
+}
+h2:after {
+  margin: 0 -55% 0 .5em;
+}
+span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Definitions */
+dt {
+    float: left;
+    clear: left;
+    width: 17%;
+    /*font-weight: bold;*/
+}
+dd {
+    margin-left: 17%;
+    margin-bottom:25px;
+    /*font-style: italic;*/
+}
+p {
+    margin-top:0;
+    margin-bottom:7px;
+}
+
+/* Blockquotes */
+blockquote {
+    text-align: center
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #397249;
+}
+
+/* Horizontal separators */
+hr {
+    color: #A6A6A6;
+}
